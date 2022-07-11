@@ -1,2 +1,38 @@
-## TypeScript, o início, de forma prática | MasterClass #07 [Vídeo](https://www.youtube.com/watch?v=0mYq5LrQN1s)
-- 
+## TypeScript, o início, de forma prática | MasterClass #07 - [Vídeo](https://www.youtube.com/watch?v=0mYq5LrQN1s)
+- Introdução:
+    - O que é o Typescript? É uma linguagem pois não precisa de passar por um processo de transpilação. Script com tipagem, ajuda no controle da aplicação (especificar o parâmtro a ser recebido pela função)
+    - Deno? Consegue ler código Typescript de forma direta
+    - Porque Typescript? Resultado final é a melhora na produtividade dos programadores dentro do projeto.
+    - Onde usar TypeScript? 
+        - Projetos Open Source;
+        - Projetos com alta escalabilidade
+        - Todos os projetos (?) -  Se sua equipe possuir conhecimento em TypeScript
+    - [Documentação](https://www.typescriptlang.org/docs/
+- Preparação do Ambiente:
+    - `mkdir backend, cd backend`
+    - `corepack enable` - adicionar o yarn
+    - `yarn init -y` - inicializar o yarn
+    - `yarn add -D typescript` - adicionar typescript como dependencia de desenvolvimento
+    - `yarn add express`
+    - criar pasta src com index.ts
+    - `yarn add @types/express -D` - adicionar a tipagem do express
+    - `yarn tsc src/index.ts` -  Converter código TS em Javascript para que o node consiga rodar
+    - `node src/index.js` - para rodar o arquivo index.js gerado através do index.ts
+    - `yarn tsc --init` - criar um arquivo de configuração tsconfig.json
+    - `yarn tsc` - para rodar o arquivo index.ts com o arquivo de configuração setado
+    - Modificação em `outDir` em `tsconfig.json` - para guardar o nosso código compilado
+    - Node padrão usamos o `nodemon` para fazer uma atualização em tempo real do nosso backend - 
+        - Iremos utilizar o `ts-node-dev` fazendo `yarn add ts-node-dev --D`
+        - Modificando o script de Dev: 
+            - `"scripts": { "dev:server": "ts-node-dev --respawn --transpile-only src/index.ts",`
+            - Rodando: `yarn dev:server`
+- Voltando para o TypeScript:
+    - Inferência de tipos: na grande maioria das vezes o TS vai conseguir determinar o tipo de variáveis e tipo de retornos
+    - Criação do arquivo UserController.ts e routes.ts
+- Declarar a tipagem de uma variável utilizando tipagem nativa (Pasta Services)
+- Desestruturação dos parâmetros (IMessageDTO)
+- Começar um projeto Frontend
+    - `yarn create react-app frontend --template=typescript`
+    - Configurar o CORS no backend para permitir quais URLs irão acessar o nosso backend : `yarn add cors` e adicionar tipagem `yarn add @types/cors -D`
+    - Inicializar o projeto
+    - Instalar o axios `yarn add axios`
