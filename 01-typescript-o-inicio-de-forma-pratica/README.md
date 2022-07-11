@@ -7,7 +7,7 @@
         - Projetos Open Source;
         - Projetos com alta escalabilidade
         - Todos os projetos (?) -  Se sua equipe possuir conhecimento em TypeScript
-    - [Documentação](https://www.typescriptlang.org/docs/
+    - [Documentação](https://www.typescriptlang.org/docs/)
 - Preparação do Ambiente:
     - `mkdir backend, cd backend`
     - `corepack enable` - adicionar o yarn
