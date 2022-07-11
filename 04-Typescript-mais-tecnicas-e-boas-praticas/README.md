@@ -1,0 +1,1 @@
+## Typescript parte 3: mais técnicas e boas práticas - [Curso](https://www.alura.com.br/curso-online-typescript-tecnicas-boas-praticas)

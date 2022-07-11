@@ -1,0 +1,1 @@
+## TypeScript parte 2: avançando na linguagem - [Curso](https://www.alura.com.br/curso-online-typescript-avancando-linguagem)
